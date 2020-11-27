@@ -32,8 +32,8 @@ jobs:
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env:
-          REACT_APP_COMPUTERVISIONENDPOINT: ${{secrets.REACT_APP_COMPUTERVISIONENDPOINT}}
-          REACT_APP_COMPUTERVISIONKEY:  ${{secrets.REACT_APP_COMPUTERVISIONKEY}}
+          REACT_APP_COMPUTERVISIONENDPOINT: ${{secrets.https://eastus.api.cognitive.microsoft.com/}}
+          REACT_APP_COMPUTERVISIONKEY:  ${{secrets.4095b00fab94483b86c366280f72ff6d}}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
